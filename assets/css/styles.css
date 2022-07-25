@@ -26,7 +26,15 @@ main {
   max-width: 425px;
 }
 
-.pokemonImage {
+.pokemonFrontImage {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  height: 18%;
+  transform: translate(-63%, 0);
+}
+
+.pokemonBackImage {
   position: absolute;
   bottom: 55%;
   left: 50%;
