@@ -21,14 +21,13 @@ main {
 }
 
 .pokedex {
-  margin-top: 0;
   width: 100%;
-  max-width: 425px;
+  max-width: 400px;
 }
 
 .pokemonFrontImage {
   position: absolute;
-  bottom: 55%;
+  bottom: 50%;
   left: 50%;
   height: 18%;
   transform: translate(-63%, 0);
@@ -47,8 +46,8 @@ main {
   font-weight: 600;
   color: #aaa;
   top: 54.5%;
-  right: 27%;
-  font-size: clamp(8px, 5vm, 25px);
+  right: 22%;
+  font-size: clamp(1px, 1vm, 20px);
 }
 
 .pokemonName {
