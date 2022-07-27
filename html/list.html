@@ -5,45 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokédex - Lucas Toscano</title>
-    <link rel="icon" href="assets/favicons/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navbar">
-      <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-        <a href="../index.html" class="object-scale-down"><img src="../assets/images/pokemon-go.png" alt=""></a>
-        <a>Início</a>
-        <a>Lista de Pokémons</a>
-        <a>Pokédex</a>
+      <nav class="invisible bg-blue-500 border-blue-700 px-2 sm:px-4 py-3 border-b-4 text-lg md:visible">
+        <div class="flex text-white">
+          <div class="logo flex-auto h-full">
+            <a href="/index.html"class="cursor-pointer text-md bg-red-700 p-2 rounded-full border-2 border-black">PokéThings</a>
+          </div>
+          <div class="navLinks flex-auto">
+            <a href="/index.html"
+              class="px-2 py-4 cursor-pointer hover:bg-blue-300 hover:text-black duration-300"
+              >Início</a
+            >
+            <a href="/html/list.html"
+              class="px-2 bg-blue-700 py-4 cursor-pointer hover:bg-blue-300 hover:text-black duration-300"
+              >Lista de Pokémons</a
+            >
+            <a href="/html/pokedex.html"
+              class="px-2 py-4 cursor-pointer hover:bg-blue-300 hover:text-black duration-300"
+              >Pokédex</a
+            >
+            <a href="/html/skills.html"
+              class="px-2 py-4 cursor-pointer hover:bg-blue-300 hover:text-black duration-300"
+              >Habilidades</a
+            >
+          </div>
+        </div>
       </nav>
     </div>
-    
-    <main>
-      <img src="" alt="pokemon" class="pokemonFrontImage">
-      <!-- <img src="" alt="pokemon" class="pokemonBackImage"> -->
-      <h1 class="pokemonData">
-        <span class="pokemonNumber"></span>
-        <span class="bar"></span>
-        <span class="pokemonName"></span>
-      </h1> 
-
-      <form class="form">
-        <input 
-        type="search"
-        class="inputSearch"
-        placeholder="Nome ou número"
-        required
-        />
-      </form>
-
-      <div class="buttons">
-        <button class="button backButton">&lt; Anterior</button>
-        <button class="button nextButton">Próximo &gt;</button>
-      </div>
-
-      <img src="assets/images/pokedex.png" alt="pokedex" class="pokedex" />
-    </main>
-    <script src="assets/js/app.js"></script>
+    <div class="w-full">
+      
+    </div>
+    <script src="/assets/js/app.js"></script>
   </body>
 </html>

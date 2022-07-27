@@ -2,7 +2,6 @@ const pokemonName = document.querySelector('.pokemonName');
 const bar = document.querySelector('.bar');
 const pokemonNumber = document.querySelector('.pokemonNumber');
 const pokemonFrontImage = document.querySelector('.pokemonFrontImage');
-// const pokemonBackImage = document.querySelector('.pokemonBackImage');
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.inputSearch');
@@ -23,6 +22,7 @@ const fetchPokemon = async (pokemon) => {
 
 const renderPokemon = async (pokemon) => {
 
+  // screen
   pokemonNumber.innerHTML = '';
   bar.innerHTML = '';
   pokemonName.innerHTML = 'Carregando...';

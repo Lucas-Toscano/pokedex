@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex - Lucas Toscano</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <main>
+      <img src="" alt="pokemon" class="pokemonFrontImage">
+      <!-- <img src="" alt="pokemon" class="pokemonBackImage"> -->
+      <h1 class="pokemonData">
+        <span class="pokemonNumber"></span>
+        <span class="bar"></span>
+        <span class="pokemonName"></span>
+      </h1> 
+
+      <form class="form">
+        <input 
+        type="search"
+        class="inputSearch"
+        placeholder="Nome ou número"
+        required
+        />
+      </form>
+
+      <div class="buttons">
+        <button class="button backButton">&lt; Anterior</button>
+        <button class="button nextButton">Próximo &gt;</button>
+      </div>
+
+      <img src="assets/images/pokedex.png" alt="pokedex" class="pokedex" />
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

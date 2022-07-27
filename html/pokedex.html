@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex - Lucas Toscano</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <nav class="invisible bg-blue-500 border-blue-700 px-2 sm:px-4 py-3 border-b-4 text-lg md:visible">
+        <div class="flex text-white">
+          <div class="logo flex-auto h-full">
+            <a href="/index.html"class="cursor-pointer text-md bg-red-700 p-2 rounded-full border-2 border-black">PokéThings</a>
+          </div>
+          <div class="navLinks flex-auto">
+            <a href="/index.html"
+              class="px-2 py-4 cursor-pointer hover:bg-blue-300 hover:text-black duration-300"
+              >Início</a
+            >
+            <a href="/html/list.html"
+              class="px-2 py-4 cursor-pointer hover:bg-blue-300 hover:text-black duration-300"
+              >Lista de Pokémons</a
+            >
+            <a href="/html/pokedex.html"
+              class="px-2 py-4 cursor-pointer bg-blue-700 hover:bg-blue-300 hover:text-black duration-300"
+              >Pokédex</a
+            >
+            <a href="/html/skills.html"
+              class="px-2 py-4 cursor-pointer hover:bg-blue-300 hover:text-black duration-300"
+              >Habilidades</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="w-full flex">
+      <div class="pokedex rounded-lg shadow-lg bg-red-700 w-11/12 text-center mx-auto my-10 border-2 border-red-800 sm:w-3/4 md:w-2/4 lg:w-1/4">
+        <div class="lights flex p-2 m-2">
+          <div id="blue-light" class="bg-blue-500 rounded-full p-4 mx-1 border-gray-500 border-4 md:p-4"></div>
+          <div id="red-light" class="bg-red-600 rounded-full p-4 mx-1 border-gray-500 border-4"></div>
+          <div id="yellow-light" class="bg-yellow-500 rounded-full p-4 mx-1 border-gray-500 border-4"></div>
+          <div id="green-light" class="bg-green-500 rounded-full p-4 mx-1 border-gray-500 border-4"></div>
+        </div>
+        <div class="border-2 border-gray-600 w-full"></div>
+        <div class="flex-row p-6">
+          <div class="bg-gray-300 w-4/5 mx-auto rounded-lg border-4 border-gray-600">
+            <div class="bg-blue-600 m-2 p-10 h-full rounded-lg">
+              <img alt="pokemon" class="pokemonFrontImage m-auto w-10 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24"/>
+            </div>
+            <div class="pokemonData flex-1 md:text-2xl p-2 text-right">
+              <span class="pokemonNumber text-gray-700"></span>
+              <span class="bar"></span>
+              <span class="pokemonName capitalize "></span>
+            </div>
+          </div>
+          <form class="form my-4">
+            <input
+              type="search"
+              class="inputSearch border-gray-600 border-4 rounded"
+              placeholder="Nome ou número"
+              required
+            />
+          </form>
+          <div class="buttons my-4">
+            <button class="button backButton bg-gray-700 text-white rounded p-2 shadow-xl hover:bg-gray-600 active:bg-black">&lt; Anterior</button>
+            <button class="button nextButton bg-gray-700 text-white rounded p-2 shadow-xl hover:bg-gray-600 active:bg-black">Próximo &gt;</button>
+          </div>
+        </div>
+      </div>
+      <div>
+    </div>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
